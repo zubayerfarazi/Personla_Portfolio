@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zubayer Farazi's portfolio showcasing web development and design skills.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zubayer Farazi Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="navigation_header">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">ZRF</a>
+        </div>
+
+        <div class="navigationItems" id="navigationItems">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contactMe">Contact Me</a></li>
+          <li><a href="./cv/Zubayer Farazi CV.pdf" target="_blank">CV</a></li>
+        </div>
+
+        <div id="modeOption" title="Get Weather Update">
+        </div>
+
+        <div class="hambarger">
+          <span id="openHam">&#9776;</span>
+          <span style="display: none" id="closeHam">&#x2716;</span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="main_section">
+            <div class="information">
+                <p id="welcome">As-salamu alaykum, I am</p>
+                <h1>Zubayer Farazi</h1>
+                <p id="info">I am a Web Developer</p>
+                <div class="search">
+                    <!-- <label for="name"></label>
+                    <input type="text" id="emailField" placeholder="Enter Your Words"> -->
+                    <p id="emailField"></p>
+                    <p style="font-size: 15px; margin-top: 20px; ">Are You Boared? <span style="color: blue; border-bottom: 1px solid blue;">Need an new Activity?</span></p>
+                    <div class="button">
+                        <button id="goButton">Click Here</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="profilePicture">
+                <img src="./images/zrf1.png" alt="zubayer profile image">
+            </div>
+        </section>
+
+        <section class="about-me">
+            <div class="about_img">
+                <img src="./images/zrf2.png" alt="zubayer farazi image">
+            </div>
+            <div class="about_written">
+                <h2 id="aboutMe">About Me</h2>
+                <h3>Developer and <span id="designer">Designer</span></h3>
+                <p id="details">I am a front-end web Developer. I can provide clean code and pixel perfect design. I also make the website more and more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device</p>
+                <div class="all_skills">
+                    <div class="skills active">
+                        <h4 id="skills">Skills</h4>
+                        <ul id="skills_li">
+                        <li>UI?UX</li>
+                        <p>Designing Web</p>
+                        <li>Web Development</li>
+                        <p>Web App Development</p>
+                        </ul>
+                    </div>
+
+                    <div >
+                        <h4 id="experience">Experience</h4>
+                            <ul id="experience_li" >
+                                <li> 2021 - Current</li>
+                                <p>UI?UX Design Training</p>
+                                <li>2021 - Curren</li>
+                                <p>Learning</p>
+                                <li>2023 - current</li>
+                                <p>Internship at </p>
+                            </ul>
+                        </div>
+
+                    <div>
+                        <h4 id="education">Education</h4>
+                        <ul id="education_li" >
+                            <li>2020 - Current</li>
+                            <p>Notre Dame University Bangladesh</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="letusTalk" id="letusTalk">Let's Talk</button>
+                </div>
+                <!-- Contact Information -->
+                <div class="card" id="card">
+                    <div class="card-inner">
+                      <div class="card-face card-front">
+                      </div>
+                      
+                      <div class="card-face card-back">
+                        <a href="https://www.facebook.com/zubayer.forazi?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/zubayerfarazi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="tel:01646745401"><i class="fa-brands fa-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                
+        </section>
+
+        <section class="services">
+            <h2 id="services">Services</h2>
+            <div class="cardDetails">
+                <div class="cards">
+                    <i class="fa-solid fa-bars"></i>
+                    <h1>Web Development</h1>
+                    <p>Every website should be build with two primary goals. Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                    <div class="text-align">
+                        <button class="webRed">Read More</button>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <i class="fa-solid fa-user"></i>
+                    <h1>Web Development</h1>
+                    <p>Every website should be build with two primary goals. Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                    <div class="text-align">
+                        <button class="webRed">Read More</button>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <i class="fa-regular fa-bell"></i>
+                    <h1>Web Development</h1>
+                    <p>Every website should be build with two primary goals. Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+                    <div class="text-align">
+                        <button class="webRed">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <div class="contactMe">
+                <h2 id="contactMe">Contact Me</h2>
+                <p>Let Me Get You A Beautiful Website.</p>
+                <div class="text-align">
+                    <a href="mailto:forazizubayer@gmail.com">
+                        <button class="webRed">Hire Me</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+        <h2>Zubayer Farazi</h2>
+        <p>To Contact With Me Follow Bellow Links:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/zubayer.forazi?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zubayerfarazi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="tel:01646745401"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>CopyRight By Zubayer <i class="fa-solid fa-heart"></i>  Farazi</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
