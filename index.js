@@ -45,9 +45,11 @@ document.getElementById('letusTalk').addEventListener('click', function(){
 })
 
 //API Fetch
-fetch('http://www.boredapi.com/api/activity/')
-.then(res => res.json())
-.then(data => {
+
+    setInterval(() => {
+        fetch('http://www.boredapi.com/api/activity/')
+        .then(res => res.json())
+        .then(data => {
     document.getElementById('goButton').addEventListener('click', function(event){
         document.getElementById('emailField').innerHTML = '';
         
@@ -58,10 +60,10 @@ fetch('http://www.boredapi.com/api/activity/')
        document.getElementById('emailField').style.borderRadius = '10px';
        document.getElementById('emailField').style.padding = '10px';
        document.getElementById('goButton').innerHTML = "Refresh Again"
-
-        // console.log(data.activity);
         
+        // console.log(data.activity);
     })
+    }, 2000);
 })
 
 
