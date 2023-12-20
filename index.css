@@ -1,101 +1,100 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Playfair Display', serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Playfair Display", serif;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-.navigation_header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 96, 88);
-    color: black;
-    padding: 10px 0px;
-    height: auto;
-    border-bottom: 1px solid black;
-    
+.navigation_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 96, 88);
+  color: black;
+  padding: 10px 0px;
+  height: auto;
+  border-bottom: 1px solid black;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 10px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
 }
-.navigationItems{
-    display: flex;
-    gap: 25px;
-    align-items: center;
+.navigationItems {
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
-.navigationItems li a{
-    color: rgb(255, 255, 255);
-    font-size: large;
-    border: 2px solid red;
-    padding: 6px;
-    border-radius: 15px;
-    background-color: #E43800;
+.navigationItems li a {
+  color: rgb(255, 255, 255);
+  font-size: large;
+  border: 2px solid red;
+  padding: 6px;
+  border-radius: 15px;
+  background-color: #e43800;
 }
-.navigationItems li a:hover{
-    background-color: white;
-    color: black;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+.navigationItems li a:hover {
+  background-color: white;
+  color: black;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.logo{
-    font-size: 30px;
-    align-items: center;
-    color: red
+.logo {
+  font-size: 30px;
+  align-items: center;
+  color: red;
 }
-.logo a{
-    background-color: red;
-    border: 2px solid red;
-    border-radius: 15px;
-    color: white;
-    padding: 5px;
+.logo a {
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 15px;
+  color: white;
+  padding: 5px;
 }
-.hambarger{
-    display: none;
-    font-size: large;
-    cursor: pointer;
+.hambarger {
+  display: none;
+  font-size: large;
+  cursor: pointer;
 }
 
 /* Main section start */
-.main_section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(255, 192, 192);
+.main_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 192, 192);
 }
-.information{
-    font-size: 30px;
+.information {
+  font-size: 30px;
 }
-main #welcome{
-    justify-content: center;
+main #welcome {
+  justify-content: center;
 }
-.information h1{
-    color: rgb(238, 0, 0);
+.information h1 {
+  color: rgb(238, 0, 0);
 }
-.profilePicture img{
-    width: 90%;
-    max-width: 100%;
-    cursor: not-allowed;
+.profilePicture img {
+  width: 90%;
+  max-width: 100%;
+  cursor: not-allowed;
 }
-.profilePicture img:hover{
-    filter: blur(2px);
-    transition: 1s ease;
+.profilePicture img:hover {
+  filter: blur(2px);
+  transition: 1s ease;
 }
-.search{
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.search {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* .search input{
     width: 100%;
@@ -105,595 +104,600 @@ main #welcome{
     padding: 0 10px;
     margin: 0 5px;
 } */
-.search button{
-    color: white;
-    background-color: red;
-    margin: 20px 0 0 0;
-    padding: 10px;
-    border: 1px solid red;
-    border-radius: 10px;
-    font-size: 17px;
-    box-shadow: 5px 1px 6px 7px rgba(255, 55, 55, 0.2);
+.search button {
+  color: white;
+  background-color: red;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 5px 1px 6px 7px rgba(255, 55, 55, 0.2);
 }
-#emailField{
-    font-size: 18px;
+#emailField {
+  font-size: 18px;
 }
-.search button:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
+.search button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 /* Styles for the contact information */
 .card {
-    display: none;
-    width: 230px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 0 auto;
-  }
+  display: none;
+  width: 230px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
 
-  .card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
 
-  .card:hover .card-inner {
-    transform: rotateY(180deg);
-  }
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
 
-  .card-face {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-  }
+.card-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
 
-  .card-front {
-    background: url('/images//zrf5.jpg') center/cover;
-    border-radius: 20px;
-    opacity: 0.5;
-  }
-  
-  .card-back {
-    transform: rotateY(180deg);
-    background-color: #f99a9a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 20px;
-  }
-.fa-brands{
-    font-size: 40px;
-    padding: 15px 0px;
-    color: black;
-  }
-  .fa-brands:hover{
-    transform: scale(1.5);
-    color: blue;
-  }
-  
+.card-front {
+  background: url("/images//zrf5.jpg") center/cover;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f99a9a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.fa-brands {
+  font-size: 40px;
+  padding: 15px 0px;
+  color: black;
+}
+.fa-brands:hover {
+  transform: scale(1.5);
+  color: blue;
+}
+
 /* start about me section */
-.about-me{
-    width: 100%;
-    display: flex;
-    background-color: rgb(255, 209, 209);
-    padding: 50px 20px;
+.about-me {
+  width: 100%;
+  display: flex;
+  background-color: rgb(255, 209, 209);
+  padding: 50px 20px;
 }
-.about-me h2{
-    color: red;
-    font-size: 30px;
-    word-spacing: 15px;
-    border-bottom: 3px solid red;
+.about-me h2 {
+  color: red;
+  font-size: 30px;
+  word-spacing: 15px;
+  border-bottom: 3px solid red;
 }
-.about-me h3{
-    word-spacing: 10px;
-    padding: 10px 0px;
-    font-size: large;
+.about-me h3 {
+  word-spacing: 10px;
+  padding: 10px 0px;
+  font-size: large;
 }
-#designer{
-    color: red;
-    font-weight: bolder;
+#designer {
+  color: red;
+  font-weight: bolder;
 }
-.about-me p{
-    text-align: justify;
-    padding: 10px 0;
-    
+.about-me p {
+  text-align: justify;
+  padding: 10px 0;
 }
-.about_img{
-    width: 100%;
-    cursor: not-allowed;
-    filter: drop-shadow(10px 1px 6px rgb(253, 138, 138));
+.about_img {
+  width: 100%;
+  cursor: not-allowed;
+  filter: drop-shadow(10px 1px 6px rgb(253, 138, 138));
 }
-.about_img img{
-    width: 60%;
-    height: auto;
-    margin: 0 10px;
-    border-radius: 20px;
+.about_img img {
+  width: 60%;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 20px;
 }
-.about_img img:hover{
-    filter: blur(2px);
-    transition: 1s ease;
+.about_img img:hover {
+  filter: blur(2px);
+  transition: 1s ease;
 }
-.about_written{
-    width: 100%;
-    justify-content: center;
+.about_written {
+  width: 100%;
+  justify-content: center;
 }
-.all_skills{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* gap: 70px; */
-    cursor: pointer;
+.all_skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 70px; */
+  cursor: pointer;
 }
-.all_skills li{
-    color: red;
-    list-style-type: disc;
+.all_skills li {
+  color: red;
+  list-style-type: disc;
 }
-#experience_li, #education_li{
-    display: none;
+#experience_li,
+#education_li {
+  display: none;
 }
-.button{
-    display: flex;
-    justify-content: center;
+.button {
+  display: flex;
+  justify-content: center;
 }
-.letusTalk:hover{
-    background-color: white;
-    border: 1px solid red;
-    color: black;
+.letusTalk:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: black;
 }
 
 /* Services Start */
-.services{
-    background-color:  rgb(255, 192, 192);
-    padding-bottom: 20px;
+.services {
+  background-color: rgb(255, 192, 192);
+  padding-bottom: 20px;
 }
-.services h2{
-    text-align: center;
-    padding: 20px;
-    color: red;
-    font-size: 30px;
+.services h2 {
+  text-align: center;
+  padding: 20px;
+  color: red;
+  font-size: 30px;
 }
-.cardDetails{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.cardDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.cards{
-    border: 2px solid rgb(255, 8, 8);
-    border-radius: 20px;
-    margin: 0 8px;
+.cards {
+  border: 2px solid rgb(255, 8, 8);
+  border-radius: 20px;
+  margin: 0 8px;
 }
-.cards .fa-solid, .fa-regular{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    font-size: 25px;
+.cards .fa-solid,
+.fa-regular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 25px;
 }
-.cards h1{
-    text-align: center;
-    padding-bottom: 10px;
+.cards h1 {
+  text-align: center;
+  padding-bottom: 10px;
 }
-.cards p{
-    text-align: justify;
-    padding: 0 10px 10px 10px;
+.cards p {
+  text-align: justify;
+  padding: 0 10px 10px 10px;
 }
-.webRed, .letusTalk{
-    border: 1px solid red;
-    border-radius: 25px;
-    padding: 15px 50px;
-    background-color: red;
-    color: white;
-    font-size: 15px;
-    margin: 10px 0;
+.webRed,
+.letusTalk {
+  border: 1px solid red;
+  border-radius: 25px;
+  padding: 15px 50px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  margin: 10px 0;
 }
-.text-align{
-    text-align: center;
-    
+.text-align {
+  text-align: center;
 }
-.webRed:hover{
-    background-color: white;
-    border: 1px solid red;
-    color: black;
+.webRed:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: black;
 }
 
 /* contact Section */
-.contact{
-    background-color: rgb(255, 209, 209);
-    padding: 20px;
+.contact {
+  background-color: rgb(255, 209, 209);
+  padding: 20px;
 }
-.contactMe{
-    border: 2px solid rgb(255, 8, 8);
-    border-radius: 20px;
-    text-align: center;
+.contactMe {
+  border: 2px solid rgb(255, 8, 8);
+  border-radius: 20px;
+  text-align: center;
 }
-.contactMe h2{
-    border-bottom: 2px solid red;
-    padding: 10px;
-    color: red;
+.contactMe h2 {
+  border-bottom: 2px solid red;
+  padding: 10px;
+  color: red;
 }
-.contactMe p{
-    padding: 10px;
-    font-size: larger;
-    word-spacing: 10px;
+.contactMe p {
+  padding: 10px;
+  font-size: larger;
+  word-spacing: 10px;
 }
 
 /* footer */
-.footer{
-    background-color:  rgb(255, 192, 192);
-    padding: 20px;
-    text-align: center;
+.footer {
+  background-color: rgb(255, 192, 192);
+  padding: 20px;
+  text-align: center;
 }
-.footer p{
-    font-size: 20px;
-    word-spacing: 10px;
-    padding: 10px 0;
+.footer p {
+  font-size: 20px;
+  word-spacing: 10px;
+  padding: 10px 0;
 }
-.icons{
-    display: flex;
-    font-size: 30px;
-    gap: 40px;
+.icons {
+  display: flex;
+  font-size: 30px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.icons i:hover {
+  font-size: 40px;
+  transition: all 0.7 ease;
+}
+p i {
+  color: red;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .emailField {
+    padding: 3px;
+  }
+  .about-me {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-}
-.icons i:hover{
-    font-size: 40px;
-    transition: all 0.7 ease;
-}
-p i{
-    color: red;
-}
-
-
-
-@media only screen and (min-width: 300px) and (max-width: 700px){
-    .emailField{
-        padding: 3px;
-    }
-    .about-me{
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .about_img{
-        padding-bottom: 20px;
-    }
-    .about_img img{
-        width: 40%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .about_written h3{
-        text-align: center;
-        padding-top: 12px;
-        word-spacing: 20px;
-    }
-    #aboutMe{
-        text-align: center;
-    }
- /* Styles for the contact information */
-.search-btn{
+  }
+  .about_img {
+    padding-bottom: 20px;
+  }
+  .about_img img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .about_written h3 {
+    text-align: center;
+    padding-top: 12px;
+    word-spacing: 20px;
+  }
+  #aboutMe {
+    text-align: center;
+  }
+  /* Styles for the contact information */
+  .search-btn {
     width: 100%;
     display: flex;
-}
-.email-address{
+  }
+  .email-address {
     flex-direction: column;
     align-items: center;
-} 
-.phoneAddress{
+  }
+  .phoneAddress {
     flex-direction: column;
     align-items: center;
-}
-.email-address label{
+  }
+  .email-address label {
     font-size: 18px;
-}
-.phoneAddress label{
+  }
+  .phoneAddress label {
     font-size: 18px;
-}
+  }
 }
 
-@media only screen and (max-width: 700px){
-    .hambarger{
-        display: flex;
-        font-size: large;
-        padding: 0 5px;
-        cursor: pointer;
-    }
-    .navigationItems{
-        display: none;
-        margin-top: 10px;
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-        top: 40px;
-        width: 100%;
-        align-items: center;
-        background-color: rgb(247, 137, 137);
-        padding-top: 15px;
-        height: 300px;
-    }
-    .information{
-        text-align: center;
-        font-size: 20px;
-    }
-    .profilePicture img{
-        width: 100%;
-    }
-    #welcome{
-        font-size: 18px;
-    }
-    
-    .about-me{
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .about_img{
-        padding-bottom: 20px;
-    }
-    .about_img img{
-        width: 40%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .about_written h3{
-        text-align: center;
-        padding-top: 12px;
-        word-spacing: 20px;
-    }
-    #aboutMe{
-        text-align: center;
-    }
-    /* Styles for the contact information */
-.search-btn{
+@media only screen and (max-width: 700px) {
+  .hambarger {
+    display: flex;
+    font-size: large;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  .navigationItems {
+    display: none;
+    margin-top: 10px;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(247, 137, 137);
+    padding-top: 15px;
+    height: 300px;
+  }
+  .information {
+    text-align: center;
+    font-size: 20px;
+  }
+  .profilePicture img {
+    width: 100%;
+  }
+  #welcome {
+    font-size: 18px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .about_img {
+    padding-bottom: 20px;
+  }
+  .about_img img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .about_written h3 {
+    text-align: center;
+    padding-top: 12px;
+    word-spacing: 20px;
+  }
+  #aboutMe {
+    text-align: center;
+  }
+  /* Styles for the contact information */
+  .search-btn {
     display: block;
     margin: 10px;
     padding: 20px;
-}
-.email-address,.phoneAddress{
+  }
+  .email-address,
+  .phoneAddress {
     gap: 20px;
     padding: 10px 0;
     font-size: 15px;
-}   
-    .cardDetails{
-        width: 100%;
-        display: block;
-    }
-    .cards{
-        margin: 10px 5px;
-    }
+  }
+  .cardDetails {
+    width: 100%;
+    display: block;
+  }
+  .cards {
+    margin: 10px 5px;
+  }
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1024px) {
-    /* Additional styles for screens between 601px and 1024px wide */
-    .hambarger{
-        display: none;
-    }
-    body{
-        width: 100%;
-    }
-    .navigationItems li a{
-        font-size: 16px;
-    }
-    .navigationItems{
-        gap: 10px;
-    }
-    .navigationItems{
-        display: flex;
-    }
-    .information{
-        font-size: 30px;
-        text-align: center;
-    }
-    .information h1{
-        font-size: 45px;
-        word-spacing: 14px;
-    }
-    .profilePicture img{
-        width: 80%;
-        height: auto;
-    }
-    .about_img img{
-        width: 60%;
-        height: 50%;
-        padding: 0 40px 0 0;
-    }
-    .all_skills{
-        width: 70%;
-        gap: 70px;
-    }
-    
-    .search-btn{
-        display: block;
-        margin: 10px;
-        padding: 20px;
-    }
-    .email-address,.phoneAddress{
-        gap: 20px;
-        padding: 10px 0;
-        font-size: 15px;
-    }   
-    .cardDetails{
-        width: 100%;
-    }
+  /* Additional styles for screens between 601px and 1024px wide */
+  .hambarger {
+    display: none;
+  }
+  body {
+    width: 100%;
+  }
+  .navigationItems li a {
+    font-size: 16px;
+  }
+  .navigationItems {
+    gap: 10px;
+  }
+  .navigationItems {
+    display: flex;
+  }
+  .information {
+    font-size: 30px;
+    text-align: center;
+  }
+  .information h1 {
+    font-size: 45px;
+    word-spacing: 14px;
+  }
+  .profilePicture img {
+    width: 80%;
+    height: auto;
+  }
+  .about_img img {
+    width: 60%;
+    height: 50%;
+    padding: 0 40px 0 0;
+  }
+  .all_skills {
+    width: 70%;
+    gap: 70px;
+  }
+
+  .search-btn {
+    display: block;
+    margin: 10px;
+    padding: 20px;
+  }
+  .email-address,
+  .phoneAddress {
+    gap: 20px;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+  .cardDetails {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-    /* Additional styles for screens wider than 1024px */
-    nav{
-        padding: 0 15px;
-        width: 100%;
-    }
-    .navigationItems{
-        gap: 10px;
-    }
-    .navigationItems li a{
-        font-size: 20px;
-    }
-    .logo{
-        font-size: 35px;
-        align-items: center;
-        color: red;
-    }
-    .logo a{
-        border-radius: 15px;
-        padding: 4px 20px;
-    }
-    .information{
-        font-size: 40px;
-        text-align: center;
-    }
-    .information h1{
-        font-size: 60px;
-        word-spacing: 20px;
-    }
-    .information p{
-        word-spacing: 10px;
-    }
-    .profilePicture img{
-        width: 100%;
-        height: auto;
-    }
-    .search{
-        padding: 10px 0;
-        display: flex;
-        align-items: center;
-    }
-    .search input{
-        height: 60px;
-        border-radius: 40px;
-    }
-    .search button{
-        padding: 14px;
-        border-radius: 10px;
-        font-size: 20px;
-    }
-    .search ::placeholder{
-        font-size: 20px;
-    }
-    .about-me h2{
-        font-size: 45px;
-        word-spacing: 15px;
-        border-bottom: 3px solid red;
-    }
-    .about-me h3{
-        word-spacing: 10px;
-        padding: 10px 0px;
-        font-size: 25px;
-    }
-    #details{
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-    .all_skills{
-        width: 100%;
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-    .cardDetails{
-        width: 100%;
-        font-size: 15px;
-    }
-    .cards .fa-solid, .fa-regular{
-        font-size: 30px;
-    }
-    
-    .webRed, .letusTalk{
-        font-size: 25px;
-    }
+  /* Additional styles for screens wider than 1024px */
+  nav {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .navigationItems {
+    gap: 10px;
+  }
+  .navigationItems li a {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 35px;
+    align-items: center;
+    color: red;
+  }
+  .logo a {
+    border-radius: 15px;
+    padding: 4px 20px;
+  }
+  .information {
+    font-size: 40px;
+    text-align: center;
+  }
+  .information h1 {
+    font-size: 60px;
+    word-spacing: 20px;
+  }
+  .information p {
+    word-spacing: 10px;
+  }
+  .profilePicture img {
+    width: 100%;
+    height: auto;
+  }
+  .search {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .search input {
+    height: 60px;
+    border-radius: 40px;
+  }
+  .search button {
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .search ::placeholder {
+    font-size: 20px;
+  }
+  .about-me h2 {
+    font-size: 45px;
+    word-spacing: 15px;
+    border-bottom: 3px solid red;
+  }
+  .about-me h3 {
+    word-spacing: 10px;
+    padding: 10px 0px;
+    font-size: 25px;
+  }
+  #details {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .all_skills {
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .cardDetails {
+    width: 100%;
+    font-size: 15px;
+  }
+  .cards .fa-solid,
+  .fa-regular {
+    font-size: 30px;
+  }
+
+  .webRed,
+  .letusTalk {
+    font-size: 25px;
+  }
 }
 /* Larger screens (1501px and up) */
 @media only screen and (min-width: 1601px) {
-    /* Additional styles for screens wider than 1500px */
-    nav{
-        padding: 0 25px;
-        width: 100%;
-        height: 55px;
-    }
-    .navigationItems{
-        gap: 35px;
-    }
-    .navigationItems li a{
-        font-size: 25px;
-    }
-    .logo a{
-        font-size: 40px;
-        border-radius: 15px;
-        padding: 4px 30px;
-    }
-    .information{
-        font-size: 40px;
-        text-align: center;
-    }
-    .information h1{
-        font-size: 55px;
-        letter-spacing: 10px;
-    }
-    .information p{
-        font-size: 30px;
-    }
-    .profilePicture img{
-        width: 100%;
-        height: 100%;
-    }
-    .search ::placeholder{
-        font-size: 25px;
-    }
-    .about-me h2{
-        font-size: 45px;
-        word-spacing: 15px;
-        border-bottom: 3px solid red;
-    }
-    .about-me h3{
-        font-size: 30px;
-    }
-    #details{
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
-    .all_skills{
-        font-size: 30px;
-        gap: 70px;
-    }
-    #services{
-        font-size: 45px;
-    }
-    .cardDetails{
-        width: 100%;
-        font-size: 25px;
-        padding: 55px;
-    }
-    .cards .fa-solid, .fa-regular{
-        font-size: 35px;
-    }
-    .webRed, .letusTalk{
-        font-size: 25px;
-    }
-    .contactMe h2{
-        font-size: 45px;
-    }
-    .contactMe p{
-        font-size: 30px;
-    }
-    .footer h2{
-        padding: 20px 0 0 0;
-        font-size: 40px;
-    }
-    .footer p{
-        font-size: 30px;
-    }
-    .icons{
-        display: flex;
-        font-size: 55px;
-        gap: 60px;
-    }
+  /* Additional styles for screens wider than 1500px */
+  nav {
+    padding: 0 25px;
+    width: 100%;
+    height: 55px;
+  }
+  .navigationItems {
+    gap: 35px;
+  }
+  .navigationItems li a {
+    font-size: 25px;
+  }
+  .logo a {
+    font-size: 40px;
+    border-radius: 15px;
+    padding: 4px 30px;
+  }
+  .information {
+    font-size: 40px;
+    text-align: center;
+  }
+  .information h1 {
+    font-size: 55px;
+    letter-spacing: 10px;
+  }
+  .information p {
+    font-size: 30px;
+  }
+  .profilePicture img {
+    width: 100%;
+    height: 100%;
+  }
+  .search ::placeholder {
+    font-size: 25px;
+  }
+  .about-me h2 {
+    font-size: 45px;
+    word-spacing: 15px;
+    border-bottom: 3px solid red;
+  }
+  .about-me h3 {
+    font-size: 30px;
+  }
+  #details {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .all_skills {
+    font-size: 30px;
+    gap: 70px;
+  }
+  #services {
+    font-size: 45px;
+  }
+  .cardDetails {
+    width: 100%;
+    font-size: 25px;
+    padding: 55px;
+  }
+  .cards .fa-solid,
+  .fa-regular {
+    font-size: 35px;
+  }
+  .webRed,
+  .letusTalk {
+    font-size: 25px;
+  }
+  .contactMe h2 {
+    font-size: 45px;
+  }
+  .contactMe p {
+    font-size: 30px;
+  }
+  .footer h2 {
+    padding: 20px 0 0 0;
+    font-size: 40px;
+  }
+  .footer p {
+    font-size: 30px;
+  }
+  .icons {
+    display: flex;
+    font-size: 55px;
+    gap: 60px;
+  }
 }
